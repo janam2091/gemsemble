@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gemsemble — Coming Soon</title>
+  <style>
+    :root{
+      --bg: #000000; 
+      --fg: #e6e6e6;
+      --muted: #bfbfbf;
+      --accent: #ffd400;
+      --max-width: 880px;
+      --radius: 14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--fg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      text-align:center;
+      padding:48px 36px;
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      box-shadow: 0 6px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.04);
+    }
+    .logo{
+      display:inline-block;
+      width:76px;
+      height:76px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#ffec8a);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 22px;
+      font-weight:700;
+      color:#000;
+      font-size:20px;
+      letter-spacing:0.6px;
+      box-shadow: 0 6px 18px rgba(255,212,64,0.12);
+    }
+    h1{
+      margin:0 0 12px 0;
+      font-size:28px;
+      line-height:1.05;
+      letter-spacing: -0.02em;
+    }
+    p.lead{
+      margin:0 0 24px 0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .accent-line{
+      width:64px;
+      height:6px;
+      background:var(--accent);
+      margin:18px auto 0;
+      border-radius:999px;
+      box-shadow: 0 6px 16px rgba(255,212,64,0.08);
+    }
+    .footer{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media (min-width:720px){
+      h1{font-size:38px}
+      .card{padding:56px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo" aria-hidden="true">G</div>
+    <h1>Gemsemble is under construction.</h1>
+    <p class="lead">We will be live soon. Thank you for your patience — something great is coming.</p>
+    <div class="accent-line" aria-hidden="true"></div>
+    <div class="footer">Want to be notified? Check back soon.</div>
+  </main>
+</body>
+</html>
